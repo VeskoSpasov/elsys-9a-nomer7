@@ -1,0 +1,7 @@
+string = input("Напишете стринг на български език: ")
+count = 0
+
+for i in string:
+    if(i=='а' or i=='ъ' or i=='о' or i=='у' or i=='е' or i=='и'):
+        count+=1
+print (count)
