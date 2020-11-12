@@ -1,0 +1,7 @@
+num = int(input("Enter a number: "))
+count = int(input("Enter another number: "))
+
+print ("The multiple numbers of num and count are")
+while count>0:
+    print (num*count)
+    count-=1
