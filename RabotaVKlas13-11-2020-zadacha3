@@ -1,5 +1,5 @@
 import math
-i = int(input())
+i = int(input("Napishete chislo: "))
 count = 0
 while i >= 2:
     i = math.sqrt(i)
