@@ -1,0 +1,7 @@
+import math
+i = int(input())
+count = 0
+while i >= 2:
+    i = math.sqrt(i)
+    count += 1
+print(count)
