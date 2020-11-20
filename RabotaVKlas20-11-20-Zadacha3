@@ -1,0 +1,9 @@
+def neshto(i):
+    count = 0
+    while i >= 2:
+        i = i**0.5
+        count += 1
+    return count
+
+i = int(input("Napishete chislo: "))
+print(neshto(i))
