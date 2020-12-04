@@ -1,0 +1,10 @@
+limit = int(input("Napishete razreshenata skorost: "))
+distance = int(input("Napishete razstoqnieto: "))
+
+def speeding(limit, distance):
+    vreme_razreshena = distance / (limit)
+    vreme_nadvishena = distance / (limit + 15)
+    
+    return (vreme_razreshena - vreme_nadvishena)*60
+    
+print("%.1f Minuti koito shte se 'spestqt'"%(speeding(limit, distance)))
