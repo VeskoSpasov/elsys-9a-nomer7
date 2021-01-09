@@ -1,0 +1,7 @@
+import pafy
+
+url = input("Napishete youtube url: ")
+video = pafy.new(url)
+
+audios = video.getbestaudio()
+audios.download()
