@@ -1,0 +1,14 @@
+num = int(input("Napishete chislo: "))
+num_1 = num
+count = 0
+
+for i in range(2, (num//2 + 1)):
+    if(num % i == 0):
+        count = count + 1
+        break
+
+while (count != 0 or num == 1):
+    num_1 += 1
+    if (count == 0 and num_1 == 1):
+        continue
+print(num_1)
