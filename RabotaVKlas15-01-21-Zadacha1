@@ -1,0 +1,11 @@
+class Triangle:
+    def _init_(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def print_sum(self):
+        print(f"Perimetura na triugulnika e {self.a + self.b + self.c}")
+
+t1 = Triangle(3, 6, 4)
+t1.print_sum
