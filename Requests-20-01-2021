@@ -1,0 +1,7 @@
+import requests
+
+url = 'https://www.python.org/static/img/python-logo@2x.png'
+
+mysave = requests.get(url)
+
+open('c:/users/LikeGeeks/downloads/PythonImage.png', 'wb').write(myfile.content)
