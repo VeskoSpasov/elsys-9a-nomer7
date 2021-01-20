@@ -1,3 +1,5 @@
+#da izteglq file kato izpolzvam requests
+
 import requests
 
 url = 'https://www.python.org/static/img/python-logo@2x.png'
