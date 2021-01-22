@@ -1,0 +1,13 @@
+    #main_text.py
+from search_text import *
+
+text = "Tova sa dumi koito sa kratki. Tova izrechenie e bezsmisleno"
+search_sentence = input("Napishete 2 ili poveche dumi: ")
+
+    #search_text.py
+def search_and_replace_text(search_sentence, text):
+    if ''.join(search_sentence) not in text:
+        return 'Tezi dumi gi nqma'
+    elif len(search_sentence) < 2:
+        return 'Trqbva da tursite 2 ili poveche dumi'
+    else:
