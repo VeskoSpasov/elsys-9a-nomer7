@@ -1,0 +1,29 @@
+import time
+import random
+time.sleep(1)
+print ("Start guessing 6 letter english words...\n")
+time.sleep(0.5)
+## A List Of Secret Words
+words = ['python','abroad','barely','centre','medium','horror','finish','length','market','office','public','reason','senior','theory','vision','yellow']
+word = random.choice(words)
+guesses = ''
+chances = 8
+while chances > 0:         
+    failed = 0             
+    for char in word:      
+        if char in guesses:    
+            print (char,end="")    
+        else:
+            print (" _ ",end=""),     
+            failed += 1    
+    if failed == 0:        
+        print ("\nYou won") 
+        break              
+    guess = input("\nguess a character:") 
+    guesses += guess                    
+    if guess not in word:  
+        chances -= 1        
+        print("\nWrong")    
+        print("\nYou have", + chances, 'more guesses') 
+        if chances == 0:           
+            print ("\nYou Lose") 
