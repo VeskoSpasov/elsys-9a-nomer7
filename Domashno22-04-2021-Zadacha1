@@ -1,0 +1,18 @@
+import os
+import requests
+
+files = ["Program1.py", "Program2.py"]
+
+for i in ["Vesko"]:
+    try:
+        os.mkdir(i)
+    except FileExistsError:
+        pass
+
+os.chdir("Vesko")
+
+for j in files:
+    r = requests.get("https://github.com/VeskoSpasov18/elsys-9a-nomer7/blob/main/KolednoDomashno-Chast2")
+    with open(j, "wb") as f:
+        for i in r.iter_content(chunk_size=8192):
+            f.write(i)
