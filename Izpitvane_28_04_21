@@ -1,0 +1,24 @@
+class TextF:
+    def __init__ (self, txtFiles):
+        self.txtFiles = txtFiles
+        self.txtFiles = []
+        
+    def add_txtFile (self, name):
+        self.txtFiles.append(name)
+        
+    def read_allFiles(self):
+        for i in self.txtFiles:
+            with open(i, "r") as f:
+                print("File", i, "\n", f.read(), "\n")
+                
+    def words_in_files(self, word):
+        num = 0
+        for i in self.txtFiles:
+            with open(i, "r") as f:
+                num += file.count("Today")
+        print (f"This word was found {num} times")
+        
+files = TextF(["text1.txt", "text2.txt"])
+files.add_txtFile("text3.txt")
+files.read_allFiles()
+files.words_in_files()
